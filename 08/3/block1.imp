@@ -1,0 +1,12 @@
+begin
+    label1 :
+        x := 1;
+	y := 2
+    label2 :
+	z := 3;
+	goto label3;
+	t := 4
+    label3 :
+        aaa := 7;
+	bbb := 8
+end	

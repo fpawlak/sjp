@@ -1,0 +1,13 @@
+(:= x 4)
+(:= wynik 1)
+(while (not (<= x 0))
+       (:= wynik (* wynik x))
+       (:= x (- x 1)))
+
+seq(assign(var(x), nat(4)),
+seq(assign(var(wynik), nat(1)),
+    while(not(leq(var(x), nat(0))),
+      seq(assign(var(wynik), mul(var(wynik), var(x))),
+          (assign(var(x), sub(var(x), nat(1))))
+	  ))
+))

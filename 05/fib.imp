@@ -1,0 +1,9 @@
+X := 6;
+Y := 0;
+Z := 1;
+while not (X <= 0)
+do
+	T := Z;
+	Z := Y + Z;
+	Y := T;
+	X := X - 1

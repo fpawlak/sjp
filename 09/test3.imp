@@ -1,0 +1,6 @@
+begin
+    let a := 4
+in
+    skip
+end;
+a := 5

@@ -1,0 +1,14 @@
+x := 5;
+y := 1;
+
+begin
+loop:
+    if not (x <= 1) then
+        y := y * x;
+	x := x - 1;
+	goto loop
+    else
+        goto koniec
+koniec:
+    skip
+end    

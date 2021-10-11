@@ -1,0 +1,19 @@
+begin
+    let a := 5
+    let b := a + 1
+    let c := 0
+    let result := 0
+    proc foo c =
+        if c = 0 then result := a
+	else
+	    call foo (c - 1);
+	    result := result + b
+in
+    begin
+	let a := 1
+        let b := 2
+	let c := 0
+    in
+        call foo 10; call foo 20
+    end
+end    

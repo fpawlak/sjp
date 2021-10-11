@@ -1,0 +1,7 @@
+begin
+    let result := 0
+    proc f1 x = if x = 0 then result := 5 else call f2 (x - 1)
+    proc f2 y = if y = 0 then result := 10 else call f1 (y - 1)
+in
+    call f1 102
+end    

@@ -1,0 +1,19 @@
+(:= ktora 7)
+(:= x 0)
+(:= y 1)
+(while (not (<= ktora 0))
+       (:= z y)
+       (:= y (+ x y))
+       (:= x z)
+       (:= ktora (- ktora 1))
+
+seq(assign(var(ktora), nat(7)),
+seq(assign(var(x), nat(0)),
+seq(assign(var(y), nat(1)),
+    while(not(leq(var(ktora), nat(0))),
+      seq(assign(var(z), var(y)),
+      seq(assign(var(y), add(var(x), var(y))),
+      seq(assign(var(x), var(z)),
+          assign(var(ktora), sub(var(ktora), nat(1)))
+	  ))))
+)))

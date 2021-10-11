@@ -1,0 +1,10 @@
+x := 5;
+print x;
+x := 6;
+print x;
+print 7;
+print 8;
+read y;
+print y;
+read y;
+print y

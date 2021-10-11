@@ -1,0 +1,10 @@
+begin
+    aaa:
+        begin
+	    bbb:
+	        goto ccc;
+		while true do skip
+        end
+    ccc:
+        x := 5
+end	
